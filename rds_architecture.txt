@@ -1,0 +1,21 @@
+Define Amazon RDS and list at least four traditional database administration tasks that it automates or eliminates for developers. Relational Database Service (RDS) is a fully managed relational database service that allows you to easily, create, operate and scale relational databases in the cloud with high availably and minimal administrative effort. It handles installation, configuration, patch, backups, or hardware provisioning. Allowing teams to focus on building. It is designed to work with relational database engines that use SQL as their query language and it enables you to launch cloud based databases that are fully managed by AWS. 
+
+
+List the six relational database engines natively supported by Amazon RDS as mentioned in the lecture.
+PostgresSQL, MySQL, MariaDB, Oracle, Oracle, Microsoft SQL Server, Amazon Aurora (AWS's proprietary high-performance database engine)
+
+Explain the architectural goal of a Multi-AZ configuration and identify which two business continuity metrics it minimizes. To replicate the database across regions, it is essential for disastrous recovery strategies, minimizing recovery time objective (RTO) and recovery point objective (RPO)
+
+
+
+
+
+
+
+How does RDS Storage Auto Scaling dynamically manage database growth without human intervention? The system detects when storage is running low and dynamically increases capacity to prevent downtown or failure. 
+
+
+What safety setting must infrastructure administrators configure to control financial costs and avoid runaway storage growth?  In autoscaling it is important to define a maximum storage threshold to  avoid uncontrolled growth and mange costs effectively.
+
+
+Critical Contrast: Based on the video, what resource layer does RDS support for auto-scaling, and which specific hardware resources are explicitly not supported by RDS auto-scaling, unlike EC2? Auto Scailing is supported for all RDS engines (PostgreSQL, MySQL, MarisDB, Oracle and SQL Server) and only supports storage, not CPU or RAM like EC2.
